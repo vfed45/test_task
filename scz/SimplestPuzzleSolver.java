@@ -33,12 +33,11 @@ public class SimplestPuzzleSolver {
                     currentSequence.add(fragment);
                     buildSequence(fragment, fragments, usedFragments, currentSequence);
                     found = true;
-                    break; // Жадібно беремо перший знайдений фрагмент
+                    break;
                 }
             }
         }
         if (!found) {
-            // Кінець послідовності
             return;
         }
     }
